@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="todo_box">
+        <div class="top_box">
+            <h1>Учет сотрудников в компании Wepro</h1>
+            <h3 class="length">Общее число сотрудников 0</h3>
+            <h3 class="length2">Премию получат: 0</h3>
+        </div>
+        <div class="search">
+            <img src="./img/search.png">
+            <input class="search_inp" type="text" placeholder="Поиск сотрудника">
+        </div>
+        <div class="main">
+            <div class="tabs">
+                <button class="btn All active_btn">Посмотреть всех</button>
+                <button class="btn up">Получит премию</button>
+                <button class="btn up2">На повышение</button>
+                <button class="btn more_thousand">З/П больше 1000$</button>
+            </div>
+            <div class="headtext">
+                <h3>Имя</h3>
+                <h3>ПО З/П</h3>
+                <h3>Получить премию?</h3>
+            </div>
+            <div class="box_sotrud">
+
+            </div>
+        </div>
+        <div class="buttons">
+            <form id="add" action="#" name="add">
+                <input type="text" name="name" placeholder="Имя сотрудника">
+                <input type="text" name="surname" placeholder="Фамилия сотрудника">
+                <input type="text" name="photo" placeholder="Ссылка картинку сотрудника">
+                <input type="text" name="salary" placeholder="З/П в $">
+                <button>Изменить сотрудника</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal_w">
+            <h2>Информация о пользователе</h2>
+            <div class="cont">
+                <img class="image" src="">
+                <p class="p_name">Имя: </p>
+                <p class="p_salary">Заробатная плата: </p>
+                <p class="p_prem">Премия: <input type="checkbox"></p>
+                <div class="btn2">
+                </div>
+            </div>
+            <form id="edit" action="#" name="edit">
+                <input type="text" name="name" placeholder="Имя сотрудника">
+                <input type="text" name="surname" placeholder="Фамилия сотрудника">
+                <input type="text" name="photo" placeholder="Ссылка картинку сотрудника">
+                <input type="text" name="salary" placeholder="З/П в $">
+                <button>Изменить сотрудника</button>
+            </form>
+            <button class="izmenit">Изменить</button>
+            <button class="soxr">Сохранить</button>
+        </div>
+        <div class="back"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
